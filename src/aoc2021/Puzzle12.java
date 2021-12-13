@@ -87,7 +87,7 @@ public class Puzzle12 {
 			}else {
 				
 				//if it's lowercase 
-				//only add if it's already been visited
+				//only add if it hasnt been visited
 				//for part 1
 				if (!path.contains(nextCave)){  
 					path.add(nextCave);  
