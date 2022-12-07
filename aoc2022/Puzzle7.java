@@ -37,12 +37,8 @@ public class Puzzle7 {
 	}
 	
 	public static String getPath(String currDir, String dirName) {
-		
-		if(currDir.equals("/"))
-			return currDir += dirName;
-		else
-			return currDir + "/" + dirName;
-		
+	
+		return currDir.equals(ROOT_DIR)?(currDir += dirName):(currDir + "/" + dirName);
 	}
 	
 	public static void main(String ... args) throws Exception{
